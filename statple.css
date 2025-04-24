@@ -1,0 +1,90 @@
+/* 전체 슬라이드 배경 및 글씨 색상 */
+.reveal {
+    background-color: #f8f9fa; /* 연한 파스텔톤 회색 */
+    color: #333 !important; /* 강제 적용 */
+    font-family: 'Arial', sans-serif;
+}
+
+/* 슬라이드 개별 스타일 */
+.reveal .slide {
+    background: #f0f4f8; /* 밝은 블루 톤 */
+    color: #222 !important; /* 덮어쓰기 */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* 제목 스타일 - has-light-background에도 적용 */
+.reveal h1, .reveal h2, .reveal h3,
+section.has-light-background h1,
+section.has-light-background h2,
+section.has-light-background h3 {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #1f4e79 !important; /* 강제 적용 */
+}
+
+/* 강조 텍스트 */
+.reveal strong, .reveal .highlight,
+section.has-light-background strong, 
+section.has-light-background .highlight {
+    color: #d9534f !important; /* 강제 적용 */
+    background-color: #fff3cd;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+/* 코드 블록 스타일 */
+.reveal pre, .reveal code {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+/* 테이블 스타일 */
+.reveal table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #ffffff;
+}
+
+.reveal th, .reveal td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: left;
+}
+
+.reveal th {
+    background: #d1ecf1;
+    color: #0c5460;
+    font-weight: bold;
+}
+
+/* 목록 스타일 */
+.reveal ul, .reveal ol {
+    padding-left: 20px;
+}
+
+.reveal li {
+    margin-bottom: 5px;
+}
+
+/* 슬라이드 내 이미지 스타일 */
+.reveal img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 네비게이션 버튼 스타일 */
+.reveal .controls {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* 슬라이드 전환 애니메이션 */
+.reveal .slide {
+    transition: background-color 0.3s ease-in-out;
+}

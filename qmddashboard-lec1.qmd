@@ -1,0 +1,46 @@
+---
+title : 'My first dashboard'
+format : dashboard
+---
+
+
+# 페이지 1 
+
+::: {.card title="My Title"}
+Card text 들어가는 곳
+:::
+
+
+## Row {height="50%"}
+
+```{python}
+a = 1
+print(a)
+```
+
+## Row {height="50%" .tabset}
+
+### part 1
+
+```{python}
+b = 2
+print(b)
+```
+
+### part 2
+
+```{python}
+c = 3
+print(c)
+```
+
+### part 3
+
+```{python}
+d = 4
+print(d)
+```
+
+
+# 페이지 2
+

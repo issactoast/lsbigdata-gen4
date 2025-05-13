@@ -7,18 +7,18 @@ np.random.randint(1, 8) # 발표조
 
 
 import numpy as np
-np.random.seed(25421)
+np.random.seed(513)
 
 # 0~35까지 숫자 섞기
-x=np.arange(1, 33)
+x=np.arange(1, 31)
 numbers = np.random.permutation(x)
 numbers
 
 # 앞에서 35개만 추출해서 7x5 형태로 reshape
-teams = numbers.reshape(8, 4)
+teams = numbers.reshape(10, -1)
 
 # 출력
 print("팀 구성 (0이 있는 팀은 4명):\n")
 for i, team in enumerate(teams, 1):
-    count = 4 - (1 if 0 in team else 0)
+    count = 3 - (1 if 0 in team else 0)
     print(f"Team {i}: {team.tolist()} (인원 수: {count}명)")

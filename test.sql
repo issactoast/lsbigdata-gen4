@@ -1,0 +1,1 @@
+SELECT name, grade FROM students WHERE age = 15;

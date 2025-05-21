@@ -7,10 +7,10 @@ np.random.randint(1, 8) # 발표조
 
 
 import numpy as np
-np.random.seed(513)
+np.random.seed(516)
 
 # 0~35까지 숫자 섞기
-x=np.arange(1, 31)
+x=np.arange(1, 11)
 numbers = np.random.permutation(x)
 numbers
 
